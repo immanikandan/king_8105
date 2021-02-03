@@ -51,6 +51,11 @@ service:
     type: NodePort
     port: 8080
     targetPort: 8080
+  test: 
+    name: test
+    type: NodePort
+    port: 8006
+    targetPort: 8006
 
 
 deployment:
@@ -77,6 +82,9 @@ deployment:
   desktop:
      name: desktop
      image: geppettotest/king-desktop:1.0
+  test: 
+    name: test
+    image: geppettotest/king-test:1.0
 
   camundapod:
      name: camundapod

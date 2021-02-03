@@ -20,6 +20,9 @@ spec:
   - name: {{ .Values.service.admin.name }}
     port: {{ .Values.service.admin.port }}
     targetPort: {{ .Values.service.admin.targetPort }}
+  - name: {{ .Values.service.test.name }}
+    port: {{ .Values.service.test.port }}
+    targetPort: {{ .Values.service.test.targetPort }}
 
   selector:
     name: {{ .Values.app.prefix }}-app

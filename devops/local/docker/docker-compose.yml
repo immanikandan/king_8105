@@ -69,9 +69,19 @@ services:
       - camundaservice
       - authproxy
       - securitymanager
+      - test
 
 
 
+  test: 
+    build: ../../../application/services/custom_services/test
+    image: test-8105
+    container_name: test-8105
+    ports: 
+      - 8006:8006
+    env_file: .env
+    depends_on:
+      - mongo
 
 
 volumes:
