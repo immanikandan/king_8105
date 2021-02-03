@@ -18,6 +18,7 @@ const routes: Routes = [
        { path: '', component: TemplateComponent, pathMatch: 'full'   } ,
 { path: 'admin', component: AdminComponent, canActivate: [AuthGuard] },
 
+{ path : 'screen123522', loadChildren: () => import('./screen123522/screen123522.module').then(m => m.Screen123522Module) } , 
 ];
 
 @NgModule({

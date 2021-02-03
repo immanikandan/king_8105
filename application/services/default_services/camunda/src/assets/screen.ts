@@ -8,6 +8,8 @@
     ,
 {"resources":"login"}
     ,
+{"resources":"screen123522"}
+    ,
 {"resources":"Casa"}
     ,
 {"resources":"administrador"}

@@ -26,6 +26,12 @@
     <a class="list-group-item list-group-item-success" *ngIf='userId!=null'  [routerLink]="['/home']">{{'source.home' | i18next}}</a>
 </div><div class="list-group panel" *ngIf='isAdminUser'>
     <a class="list-group-item list-group-item-success" [routerLink]="['/admin']">{{'source.admin' | i18next}}</a>
+</div>
+<div class="list-group panel" *ngIf='userId!=null'>
+    <a href="#test" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">test <i class="fa fa-caret-down"></i></a>
+    <div class="collapse" id="test">
+<a class="list-group-item" [routerLink]="['/screen123522']">{{'source.screen123522' | i18next}}</a>
+</div>
 </div><div class="list-group panel">
     <a class="list-group-item list-group-item-success" *ngIf='userId!=null' (click)="logout()">{{'source.logout' | i18next}}</a>
 </div>

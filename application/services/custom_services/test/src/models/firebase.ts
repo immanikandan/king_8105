@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 
 export const firebaseSchema = new Schema({
    name: String,
-   place: String
+   email: String
 })
 
 const firebaseModel = mongoose.model('firebase', firebaseSchema, 'firebase');
